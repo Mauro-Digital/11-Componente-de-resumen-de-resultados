@@ -1,0 +1,226 @@
+:root{
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+--Light-slate-blue: hsl(252, 100%, 67%);
+--Light-royal-blue: hsl(241, 81%, 54%);
+
+--Violet-blue: hsla(256, 72%, 46%, 1);
+--Persian-blue: hsla(241, 72%, 46%, 0);
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+
+--red-transparent: hsla(0, 55%, 81%, 0.433);
+--yellow-transparente: hsla(39, 100%, 56%, 0.286);
+--green-transparent: hsla(166, 100%, 37%, 0.159);
+--blue-transparent: hsla(234, 85%, 45%, 0.315);
+}
+
+body{
+    font-family: "Hanken Grotesk", sans-serif;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+html{
+    font-size: 10px;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+@media (min-width: 375px){
+    body{
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }    
+}
+
+.flex-group{
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+.grid-flow{
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+}
+.grid-flow-3{
+    align-items: center;
+}
+.result-summary{    
+    background: linear-gradient(to top, var(--Light-royal-blue), var(--Light-slate-blue));     
+    text-align: center;  
+    width: 375px;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 0 0 40px 40px;    
+    display: grid;
+
+}
+.section-title-1{   
+    margin: 2.5rem 0;
+    color: rgba(255, 255, 255, 0.565);
+    margin-top: 40px;
+
+}
+.result-score{    
+    display: grid;
+    place-content: center;
+    width: 150px;
+    height: 150px;
+    font-size: 1.5rem;    
+    border-radius: 50%;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, var(--Cobalt-blue) 0%, var(--blue-transparent) 100%);
+    /* background: linear-gradient(to top, var(--Cobalt-blue), var(--Light-royal-blue)); */
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--White);
+}
+.span-score-1{
+    font-size: 50px;
+}
+.span-score-2{
+    color: rgba(255, 255, 255, 0.565);
+    font-weight: 700;
+    font-size: 15px;
+}
+.grid-flow{       
+    margin-top: 0.1rem;
+    width: 340px;   
+    margin: 0 auto;
+    
+}
+.grid-flow-grid{
+    font-size: 25px;
+    color:azure;
+    font-weight: 550;
+}
+.paragraph{
+    font-size: 1.9rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.565); 
+    margin-bottom: 20px;    
+}
+.title-2{    
+    font-size: 1.9rem;
+    margin-left: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.summary-item{            
+    display: flex;
+    width: 80%;
+    height: 60px;
+    margin-left: 50px;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-bottom: 15px;  
+    align-items: center;              
+}
+.summary-item-1{
+    background-color: var(--red-transparent);
+    cursor: pointer;
+}
+.summary-item-1:hover{
+    background-color: var(--Dark-gray-blue);    
+}
+.summary-item-2{
+    background-color: var(--yellow-transparente);
+    cursor: pointer;
+}
+.summary-item-2:hover{
+    background-color: var(--Dark-gray-blue);
+}
+.summary-item-3{
+    background-color: var(--green-transparent);
+    cursor: pointer;
+}
+.summary-item-3:hover{
+    background-color: var(--Dark-gray-blue);
+}
+.summary-item-4{
+    background-color: var(--blue-transparent);
+    cursor: pointer;
+}
+.summary-item-4:hover{
+    background-color: var(--Dark-gray-blue);
+}
+.flex-group{
+    gap: 10px; 
+    margin-left: 1.4rem;     
+
+}
+.summary-title{
+    font-size: 1.6rem;    
+}
+.summary-title-1{
+    color: var(--Light-red);
+}
+.summary-title-2{
+    color: var(--Orangey-yellow);
+}
+.summary-title-3{
+    color: var(--Green-teal);    
+}
+.summary-title-4{
+    color: var(--Cobalt-blue);
+}
+.flex-item{      
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+.span-2{
+    color: rgba(131, 127, 127, 0.824);
+    font-weight: 600;
+}
+.span-1{
+    font-weight: 600;
+}
+
+.button{ 
+    border-style: none;
+    font-size: 20px; 
+    letter-spacing: 1px;               
+    height: 60px; 
+    width: 290px;
+    margin-top: 2rem;    
+    border-radius: 4rem;
+    display: grid;        
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    margin: 0 78px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--Light-lavender);
+    transition: all 300ms ease-in-out;
+    color: var(--Dark-gray-blue);
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    
+}
+
+
